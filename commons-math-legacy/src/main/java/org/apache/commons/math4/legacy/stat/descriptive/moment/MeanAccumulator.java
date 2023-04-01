@@ -42,6 +42,7 @@ public class MeanAccumulator implements StatisticAccumulator<Mean> {
         return new Mean(firstMoment);
     }
 
+    @Override
     public void add(final double d) {
         // Borrowed from FirstMoment::increment
         if (n == 0) {
